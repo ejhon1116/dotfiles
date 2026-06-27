@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+	email = ejhon1116@gmail.com
+	name = Ethan Jhong
+# Please adapt and uncomment the following lines:
+#	name = ejhong
+#	email = ejhong@ejhong.(none)
+[init]
+	defaultBranch = main

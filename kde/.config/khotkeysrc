@@ -1054,6 +1054,10 @@ Key=Ctrl+Alt+T
 Type=SHORTCUT
 Uuid={ea2eeae3-7c01-40da-abb1-cd3403e90d43}
 
+[DirSelect Dialog]
+DirSelectDialog Size[$d]
+History Items[$d]
+
 [General]
 ColorScheme[$d]
 ColorSchemeHash[$d]
@@ -1071,7 +1075,32 @@ WindowsCount=0
 Theme[$d]
 
 [KDE]
+LookAndFeelPackage[$d]
+SingleClick[$d]
 widgetStyle[$d]
+
+[KFileDialog Settings]
+Allow Expansion[$d]
+Automatically select filename extension[$d]
+Breadcrumb Navigation[$d]
+Decoration position[$d]
+LocationCombo Completionmode[$d]
+PathCombo Completionmode[$d]
+Show Bookmarks[$d]
+Show Full Path[$d]
+Show Inline Previews[$d]
+Show Preview[$d]
+Show Speedbar[$d]
+Show hidden files[$d]
+Sort by[$d]
+Sort directories first[$d]
+Sort reversed[$d]
+Speedbar Width[$d]
+View Style[$d]
+
+[KScreen]
+ScaleFactor[$d]
+ScreenScaleFactors[$d]
 
 [Main]
 AlreadyImported=defaults,kde32b1,konqueror_gestures_kde321,konsole

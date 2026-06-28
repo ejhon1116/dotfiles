@@ -85,24 +85,21 @@ tmux_conf_24b_colour=auto
 #   - tmux_conf_theme_synchronized
 tmux_conf_theme=enabled
 
-# default theme
-tmux_conf_theme_colour_1="#080808"    # dark gray
-tmux_conf_theme_colour_2="#303030"    # gray
-tmux_conf_theme_colour_3="#8a8a8a"    # light gray
-tmux_conf_theme_colour_4="#00afff"    # light blue
-tmux_conf_theme_colour_5="#ffff00"    # yellow
-tmux_conf_theme_colour_6="#080808"    # dark gray
-tmux_conf_theme_colour_7="#e4e4e4"    # white
-tmux_conf_theme_colour_8="#080808"    # dark gray
-tmux_conf_theme_colour_9="#ffff00"    # yellow
-tmux_conf_theme_colour_10="#ff00af"   # pink
-tmux_conf_theme_colour_11="#5fff00"   # green
-tmux_conf_theme_colour_12="#8a8a8a"   # light gray
-tmux_conf_theme_colour_13="#e4e4e4"   # white
-tmux_conf_theme_colour_14="#080808"   # dark gray
-tmux_conf_theme_colour_15="#080808"   # dark gray
-tmux_conf_theme_colour_16="#d70000"   # red
-tmux_conf_theme_colour_17="#e4e4e4"   # white
+# ==============================================================================
+# PERFECT P10K "CLASSIC DARKEST" PROFILE FOR OH-MY-TMUX
+# ==============================================================================
+tmux_conf_theme_colour_1="#1c1c1c"    # Exact match for p10k 'Darkest' background (ANSI 234)
+tmux_conf_theme_colour_2="#303030"    # Dark slate fill for inactive tabs (ANSI 236)
+tmux_conf_theme_colour_3="#4e4e4e"    # Subsegment split line boundaries (ANSI 239)
+tmux_conf_theme_colour_4="#0087af"    # P10K Directory Anchor Blue (ANSI 31)
+tmux_conf_theme_colour_5="#ffaf00"    # P10K Warning / Modified Git State Yellow (ANSI 178)
+tmux_conf_theme_colour_6="#1c1c1c"    # Background Masking block
+tmux_conf_theme_colour_7="#ffffff"    # Pure White Foreground
+tmux_conf_theme_colour_8="#1c1c1c"    # Background Masking block
+tmux_conf_theme_colour_9="#262626"    # Soft Onyx Background (Protects Blue text from vibrating)
+tmux_conf_theme_colour_10="#d75f00"   # Alert/Orange text block
+tmux_conf_theme_colour_11="#5fca00"   # P10K Success / Clean Git Green (ANSI 76)
+tmux_conf_theme_colour_12="#8a8a8a"   # Metadata / Timestamp Gray (ANSI 244)
 
 # default theme (ansi)
 #tmux_conf_theme_colour_1="colour0"
@@ -362,6 +359,7 @@ tmux_conf_battery_status_discharging="↓"    # U+2193
 tmux_conf_theme_clock_colour="$tmux_conf_theme_colour_4"
 tmux_conf_theme_clock_style="24"
 
+set -g status-position top
 
 # -- clipboard -----------------------------------------------------------------
 
@@ -435,6 +433,7 @@ tmux_conf_update_plugins_on_reload=true
 #   - true (default)
 #   - false
 tmux_conf_uninstall_plugins_on_reload=true
+
 
 # /!\ the tpm bindings differ slightly from upstream:
 #   - installing plugins: <prefix> + I

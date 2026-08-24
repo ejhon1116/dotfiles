@@ -27,4 +27,7 @@ if [ -d "$HOME/.local/bin" ]; then
 fi
 
 export PATH=~/.npm-global/bin:$PATH
-. "$HOME/.cargo/env"
+
+if [ -f "$HOME/.cargo/env" ]; then
+    . "$HOME/.cargo/env"
+fi

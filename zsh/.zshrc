@@ -107,8 +107,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /opt/ros/humble/setup.zsh
-
 alias mrover="cd ~/ros2_ws/src/mrover && source_mrover_overlay"
 function build_mrover() {
     ./build.sh ${1} && mrover
@@ -117,10 +115,6 @@ alias clean_mrover="./clean.sh && mrover"
 
 # bun completions
 [ -s "/home/mrover/.bun/_bun" ] && source "/home/mrover/.bun/_bun"
-
-# ros2 completions
-eval "$(register-python-argcomplete3 ros2)"
-eval "$(register-python-argcomplete3 colcon)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
